@@ -56,6 +56,7 @@
       normalizeScroll: false,
       ignoreMobileResize: true,
     });
+    window.smoother = smoother;
   }
 
   ////////////////////////////////////////////////////

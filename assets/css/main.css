@@ -116,21 +116,25 @@
   --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
   /* Font Size End */
   /* template main primary color */
-  --main-h: 72;
-  --main-s: 99%;
-  --main-l: 50%;
+  --main-h: 321;
+  --main-s: 66%;
+  --main-l: 56%;
   --main: var(--main-h) var(--main-s) var(--main-l);
   /* template main secendary color */
-  --main-two-h: 19;
-  --main-two-s: 100%;
-  --main-two-l: 50%;
+  --main-two-h: 321;
+  --main-two-s: 66%;
+  --main-two-l: 56%;
   --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
   /* White Color */
   --white: 0 0% 100%;
   --black: 208 76% 3%;
   --body: 204 16% 24%;
-  --heading-color: var(--black);
-  --body-color: var(--body);
+  --heading-color: 321 66% 56%;
+  --body-color: 0 0% 10%;
+  /* Design direction accents */
+  --cream: 34 63% 89%;
+  --burgundy: 343 42% 30%;
+  --card-tint: 33 43% 96%;
   --translate-x-50: translateX(-50%);
   --translate-y-50: translateY(-50%);
   --size-05: 0.125rem;
@@ -7530,7 +7534,7 @@ input:focus-visible {
   text-align: center;
   background: var(--main-600);
   box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
-  color: hsl(var(--heading-color));
+  color: hsl(var(--white));
   border-radius: 50%;
   transition: all 0.3s;
 }
@@ -10070,4 +10074,301 @@ body.tw-magic-cursor #magic-cursor {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/* ===================== Custom palette overrides ===================== */
+/* Black sections: cream body text, magenta headings, burgundy-tinted cards */
+.bg-black,
+.bg-black .text-white,
+.bg-black p,
+.feature-three-area,
+.feature-three-area .text-white,
+.feature-three-area .feature-three-text,
+.footer-three-area,
+.footer-three-area .text-white,
+.footer-three-area p {
+  color: hsl(var(--cream)) !important;
+}
+.bg-black h1, .bg-black h1.text-white,
+.bg-black h2, .bg-black h2.text-white,
+.bg-black h3, .bg-black h3.text-white,
+.bg-black h4, .bg-black h4.text-white,
+.bg-black h5, .bg-black h5.text-white,
+.bg-black h6, .bg-black h6.text-white,
+.feature-three-area h1, .feature-three-area h1.text-white,
+.feature-three-area h2, .feature-three-area h2.text-white,
+.feature-three-area h3, .feature-three-area h3.text-white,
+.feature-three-area h4, .feature-three-area h4.text-white,
+.feature-three-area h5, .feature-three-area h5.text-white,
+.feature-three-area h6, .feature-three-area h6.text-white,
+.footer-three-area h1, .footer-three-area h1.text-white,
+.footer-three-area h2, .footer-three-area h2.text-white,
+.footer-three-area h3, .footer-three-area h3.text-white,
+.footer-three-area h4, .footer-three-area h4.text-white,
+.footer-three-area h5, .footer-three-area h5.text-white,
+.footer-three-area h6, .footer-three-area h6.text-white {
+  color: hsl(var(--main)) !important;
+}
+/* Contact section big intro line stays white/cream, not magenta */
+#contact .footer-three-top-left h2.text-white {
+  color: hsl(var(--cream)) !important;
+}
+
+.bg-black .service-three-single {
+  background-color: hsl(var(--burgundy) / 0.18);
+  border-color: hsl(var(--burgundy) / 0.6);
+}
+.bg-black .service-three-single:hover {
+  border-color: hsl(var(--main));
+}
+.feature-three-single:hover .feature-three-text {
+  color: hsl(var(--main)) !important;
+}
+
+/* White sections: charcoal body text (via --body-color), magenta headings (via --heading-color), warm card tint */
+.portfolio-three-item,
+.testimonial-three-wrapper {
+  background: hsl(var(--card-tint));
+}
+
+/* ===================== Section-specific black/magenta refinements ===================== */
+/* Preloader */
+.preloader-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.preloader svg {
+  fill: hsl(var(--body-color));
+}
+.preloader .preloader-heading .load-text {
+  color: hsl(var(--cream));
+  font-size: 64px;
+  letter-spacing: 20px;
+}
+
+/* Hero: tagline above "view projects" black, stat labels black (excludes the black CTA card) */
+.banner-three-center-title {
+  color: hsl(var(--body-color));
+}
+.banner-three-right .banner-three-counter-item:not(.bg-black) .text-heading {
+  color: hsl(var(--body-color));
+}
+
+/* About intro: black body text, magenta keyword highlights */
+#about .about-three-title.text-heading {
+  color: hsl(var(--body-color));
+}
+.tw-highlight-magenta {
+  color: hsl(var(--main));
+}
+
+/* Portfolio: project titles black */
+#portfolio .portfolio-three-item h2,
+#portfolio .portfolio-three-item h2 .text-heading {
+  color: hsl(var(--body-color));
+}
+
+/* Recommendation: heading + quote + sign-off black, quotation marks magenta */
+#recommendation .testimonial-three-title.text-heading,
+#recommendation .testimonial-three-paragraph.text-heading,
+#recommendation .testimonial-three-content h2 {
+  color: hsl(var(--body-color));
+}
+
+/* Articles: heading black */
+#articles .about-three-title.text-heading {
+  color: hsl(var(--body-color));
+}
+
+/* Contact: enlarge name tag + social buttons */
+.footer-three-top-info .footer-three-social ul li a {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+
+/* Offcanvas menu: back-to-top-style arrow stays magenta bg / white arrow (see .back-to-top-btn above) */
+
+/* Offcanvas menu: make the right-side "Contact us" block fill the panel */
+.tw-offcanvas-2-right .twoffcanvas__contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.tw-offcanvas-2-right .twoffcanvas__contact-title h5 {
+  font-size: 2.75rem;
+  margin-bottom: 40px;
+}
+.tw-offcanvas-2-right .twoffcanvas__contact-info ul li {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.tw-offcanvas-2-right .twoffcanvas__contact-info ul li span.tw-text-xl {
+  font-size: 2rem;
+}
+.tw-offcanvas-2-right .twoffcanvas__contact-info ul li a {
+  font-size: 1.75rem;
+}
+
+/* Skills section: interactive grid pattern background */
+.skills-grid-bg {
+  --mx: 50%;
+  --my: 50%;
+  pointer-events: none;
+  overflow: hidden;
+  background-image:
+    linear-gradient(to right, hsl(var(--cream) / 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--cream) / 0.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+.skills-grid-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    420px circle at var(--mx) var(--my),
+    hsl(var(--main) / 0.25),
+    transparent 65%
+  );
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.skills-grid-bg.is-active::before {
+  opacity: 1;
+}
+
+/* Recommendation section: certificate thumbnail captions */
+#recommendation a p {
+  color: hsl(var(--body-color));
+}
+
+/* FAQ heading, footer "Quick Links" + name near the back-to-top arrow, and
+   the contact card name: stay white/cream instead of the default
+   dark-section heading magenta */
+#faq .about-three-title.text-white,
+.footer-three-middile h4.text-white,
+.footer-three-top-content h3.text-white {
+  color: hsl(var(--cream)) !important;
+}
+
+/* About: monospace "spec card" replacing the portrait image */
+.about-spec-col {
+  align-self: flex-start;
+}
+.about-spec-card {
+  position: relative;
+  max-width: 725px;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .about-spec-card {
+    max-width: 100%;
+    margin-block-end: 30px;
+  }
+}
+.about-spec-card-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  border: 1px solid hsl(var(--main));
+  border-radius: 14px;
+  overflow: hidden;
+  font-family: "SFMono-Regular", "JetBrains Mono", "Fira Code", Menlo, Consolas,
+    "Courier New", monospace;
+}
+.about-spec-rows {
+  padding: 2.25rem 2rem;
+}
+.about-spec-row {
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  column-gap: 1.25rem;
+  padding: 0.55rem 0;
+  align-items: baseline;
+}
+.about-spec-label {
+  color: hsl(var(--cream) / 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.about-spec-value {
+  color: hsl(var(--cream));
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.about-spec-status {
+  color: hsl(var(--main));
+}
+.about-spec-rule {
+  height: 1px;
+  background: hsl(var(--main) / 0.55);
+  margin: 0.4rem 0 0.7rem;
+}
+@media screen and (max-width: 575px) {
+  .about-spec-rows {
+    padding: 1.75rem 1.25rem;
+  }
+  .about-spec-row {
+    grid-template-columns: 1fr;
+    row-gap: 0.3rem;
+    padding: 0.65rem 0;
+  }
+  .about-spec-label {
+    font-size: 0.7rem;
+    white-space: normal;
+  }
+  .about-spec-value {
+    font-size: 0.8rem;
+  }
+}
+
+/* Portfolio watermark: fluid width-based sizing (measured so "PROJECTS"
+   always spans ~93% of the viewport) instead of the fixed per-breakpoint
+   sizes tuned for the original, differently-shaped word */
+.portfolio-three-shape-title {
+  font-size: clamp(60px, 24vw, 640px);
+}
+
+/* Skills row thumbnails: fixed, uniform box so every image (regardless of
+   its own aspect ratio) is cropped to the same symmetric size and never
+   overflows the pill-shaped .service-three-single border */
+.service-three-thumb {
+  width: 340px;
+  height: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.service-three-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 1399px) {
+  .service-three-thumb {
+    width: 280px;
+    height: 164px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .service-three-thumb {
+    width: 220px;
+    height: 130px;
+    border-radius: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service-three-thumb {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+  }
+}
+
