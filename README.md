@@ -15,9 +15,6 @@ Bootstrap/GSAP animated template.
   <a href="https://www.linkedin.com/in/aaryahi-ahluwalia-4a3962345">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:ahluwaliaaaryahi@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-D946A6?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
 </p>
 
 </div>
@@ -40,8 +37,8 @@ This site is a static, single-page portfolio (`index.html`, no build step) cover
 - **Recommendation** — reference excerpt from Origen Technologies
 - **Articles** — a featured write-up ("The SAIL Model")
 - **FAQ** — accordion covering stack, focus areas, and availability
-- **Contact** — email, phone, LinkedIn, GitHub, and a certificate gallery
-  (Microsoft Azure AZ-900, Origen reference letter)
+- **Contact** — LinkedIn, GitHub, and a certificate gallery (Microsoft Azure AZ-900,
+  Origen reference letter)
 
 ## Tech Stack
 
@@ -96,8 +93,6 @@ Static files only — deploy by pointing any static host (Netlify, Vercel, GitHu
 Pages, etc.) at the repo root. No build command is needed.
 
 ## Contact
-
-
 
 - **LinkedIn:** [aaryahi-ahluwalia](https://www.linkedin.com/in/aaryahi-ahluwalia-4a3962345)
 - **GitHub:** [@aaryahi-dotcom](https://github.com/aaryahi-dotcom)
