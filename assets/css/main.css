@@ -10372,3 +10372,107 @@ body.tw-magic-cursor #magic-cursor {
   }
 }
 
+
+/* Hero bullet list + hover tooltips */
+.hero-bullets { list-style: none; padding: 0; margin: 0; }
+.hero-bullet { position: relative; padding-left: 22px; cursor: default; }
+.hero-bullet::before { content: "•"; position: absolute; left: 4px; top: 0; font-size: 1.2em; line-height: 1.4; }
+.hero-bullet::after {
+  content: attr(data-tip);
+  position: absolute; left: 22px; top: 100%; z-index: 20;
+  width: max-content; max-width: 240px;
+  background: #000; color: #fff; font-size: 14px; font-weight: 500; line-height: 1.4;
+  padding: 8px 12px; border-radius: 8px;
+  opacity: 0; visibility: hidden; transform: translateY(4px);
+  transition: opacity .2s, transform .2s; pointer-events: none;
+}
+.hero-bullet:hover::after, .hero-bullet:focus::after { opacity: 1; visibility: visible; transform: none; }
+.banner-three-list { max-width: 320px; }
+
+/* Hero counters as circles */
+.banner-three-right .banner-three-counter-item {
+  width: 190px; max-width: 190px; aspect-ratio: 1 / 1; border-radius: 50% !important;
+  padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+}
+.banner-three-right .banner-three-counter-item:nth-child(2) { margin-block-start: -30px; }
+.banner-three-right .banner-three-counter-paragraph { font-size: 15px; line-height: 1.25; }
+
+/* Hero knowledge graph */
+.banner-three-center { position: relative; }
+.hero-graph { display: none; }
+@media screen and (min-width: 1200px) {
+  .hero-graph {
+    display: block; position: absolute; z-index: 2;
+    left: 50%; transform: translateX(-50%);
+    bottom: calc(100% + 105px);
+    width: min(920px, calc(100vw - 680px)); height: 470px;
+  }
+}
+.hero-graph canvas { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+.hero-graph-tip {
+  position: absolute; z-index: 3; max-width: 230px; text-align: left;
+  background: #000; color: #fff; padding: 8px 12px; border-radius: 8px;
+  font-size: 13px; line-height: 1.35; transform: translate(-50%, -100%);
+}
+.hero-graph-tip b { display: block; font-weight: 700; }
+.hero-graph-tip a { color: #ff7ac8; font-weight: 700; text-decoration: none; display: inline-block; margin-top: 4px; }
+
+
+/* Projects: 2-column grid instead of staggered steps */
+#portfolio .portfolio-three-wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+#portfolio .portfolio-three-item,
+#portfolio .portfolio-three-item:nth-child(even) {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+#portfolio .portfolio-three-item .portfolio-three-wrap { flex: 1 1 auto; align-content: flex-start; }
+#portfolio .portfolio-three-item .portfolio-thumb { margin-top: auto; }
+@media screen and (max-width: 767px) {
+  #portfolio .portfolio-three-wrapper { grid-template-columns: 1fr; }
+}
+
+/* Projects: uniform thumbnail size across all cards */
+#portfolio .portfolio-three-item .portfolio-thumb { overflow: hidden; }
+#portfolio .portfolio-three-item .portfolio-thumb img {
+  width: 100%; aspect-ratio: 16 / 9; height: auto;
+  object-fit: cover; object-position: top center; display: block;
+}
+
+/* Projects grid: bootstrap's align-items-start !important was stopping cards in a row from stretching to equal height */
+#portfolio .portfolio-three-wrapper.align-items-start { align-items: stretch !important; }
+#portfolio .portfolio-three-item { align-self: stretch; height: 100%; }
+
+/* Offcanvas menu: link text was magenta on a magenta panel (invisible) — make it white */
+.tw-offcanvas-2-left .tw-main-menu-mobile ul li > a {
+  color: #fff !important;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.tw-offcanvas-2-left .tw-main-menu-mobile ul li:first-child > a { border-top: 0; }
+.tw-offcanvas-2-left .tw-main-menu-mobile ul li:hover > a,
+.tw-offcanvas-2-left .tw-main-menu-mobile ul li > a:hover {
+  color: #000 !important;
+}
+.tw-offcanvas-2-left .tw-main-menu-mobile ul li > a.color-active { color: #000 !important; }
+
+/* Offcanvas menu: show content reliably when opened (delayed transitions left the text stuck hidden) */
+.tw-offcanvas-2-area.opened .tw-offcanvas-2-left,
+.tw-offcanvas-2-area.opened .tw-offcanvas-2-right,
+.tw-offcanvas-2-area.opened .tw-offcanvas-2-close {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: none !important;
+  animation: ocFadeIn 0.4s ease-out 0.5s backwards;
+}
+@keyframes ocFadeIn { from { opacity: 0; } to { opacity: 1; } }

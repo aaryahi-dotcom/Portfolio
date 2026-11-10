@@ -26,7 +26,7 @@
     <!-- aos -->
     <link rel="stylesheet" href="assets/css/aos.css" />
     <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/main.css?v=24" />
+    <link rel="stylesheet" href="assets/css/main.css?v=38" />
   </head>
 
   <body class="tw-magic-cursor">
@@ -298,11 +298,12 @@
                 <ul>
                   <li><a class="color-active" href="#">Home</a></li>
                   <li><a href="#about">About</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#portfolio">Projects</a></li>
                   <li><a href="#experience">Experience</a></li>
+                  <li><a href="#portfolio">Projects</a></li>
+                  <li><a href="#skills">Skills</a></li>
                   <li><a href="#recommendation">Recommendation</a></li>
-                  <li><a href="#articles">Articles</a></li>
+                  <li><a href="#certificates">Certificates</a></li>
+                  <li><a href="#articles">Research &amp; Writing</a></li>
                   <li><a href="#faq">FAQ</a></li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -355,16 +356,8 @@
             <div class="row">
               <div class="col-xl-12">
                 <div class="banner-three-wrapper position-relative z-1">
-                  <div
-                    class="banner-three-man position-absolute start-50 translate-middle-x"
-                  >
-                    <img
-                      src="assets/images/shapes/hero-portrait.png"
-                      alt="Aaryahi Ahluwalia"
-                    />
-                  </div>
                   <h1 class="banner-three-title text-black tw-mb-30">
-                    ai engineer
+                    AI/ML Engineer
                   </h1>
                   <div
                     class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1"
@@ -376,72 +369,30 @@
                       data-aos-delay="200"
                     >
                       <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
-                        Hi! I'm Aaryahi <br />
-                        a B.Tech CS-AI student and AI engineer.
+                        Hi! I am Aaryahi Ahluwalia, <br />
+                        a B.Tech CS student specializing in AI
                       </h2>
                       <div class="banner-three-list">
-                        <ul>
-                          <li
-                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
-                          >
-                            <span
-                              ><img
-                                src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
-                            /></span>
-                            Explainable ML
-                          </li>
-                          <li
-                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
-                          >
-                            <span
-                              ><img
-                                src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
-                            /></span>
-                            LLM Systems & Agents
-                          </li>
-                          <li
-                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
-                          >
-                            <span
-                              ><img
-                                src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
-                            /></span>
-                            Backend & Cloud
-                          </li>
-                          <li
-                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
-                          >
-                            <span
-                              ><img
-                                src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
-                            /></span>
-                            Computer Vision
-                          </li>
-                          <li
-                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
-                          >
-                            <span
-                              ><img
-                                src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
-                            /></span>
-                            Research & Hackathons
-                          </li>
-                        </ul>
+<ul class="hero-bullets">
+<li class="hero-bullet tw-text-lg fw-medium tw-mb-4" tabindex="0" data-tip="RiskPulse, RedShift"><span class="hero-bullet-text">Explainable ML &amp; Risk Intelligence</span></li>
+<li class="hero-bullet tw-text-lg fw-medium tw-mb-4" tabindex="0" data-tip="AirMouse, AEGIS"><span class="hero-bullet-text">Autonomous Systems &amp; Robotics</span></li>
+<li class="hero-bullet tw-text-lg fw-medium tw-mb-4" tabindex="0" data-tip="Agastya, open-vocab segmentation review"><span class="hero-bullet-text">Computer Vision &amp; Signal Processing</span></li>
+<li class="hero-bullet tw-text-lg fw-medium tw-mb-4" tabindex="0" data-tip="quotation-fidelity forensic pipeline"><span class="hero-bullet-text">LLM Agents, RAG &amp; NLP</span></li>
+<li class="hero-bullet tw-text-lg fw-medium tw-mb-4" tabindex="0" data-tip="ArthSetu credit scoring, stress testers"><span class="hero-bullet-text">Quantitative FinTech Systems</span></li>
+<li class="hero-bullet tw-text-lg fw-medium tw-mb-4" tabindex="0" data-tip="recon/vulnerability-assessment toolkit"><span class="hero-bullet-text">Applied Cybersecurity</span></li>
+<li class="hero-bullet tw-text-lg fw-medium tw-mb-4" tabindex="0" data-tip="API-first, pipeline infra across projects"><span class="hero-bullet-text">Cloud-Native Backend Engineering</span></li>
+</ul>
                       </div>
                     </div>
                     <div
                       class="banner-three-center text-center"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="200"
                     >
+                      <div class="hero-graph" id="heroGraph" aria-label="Interactive knowledge graph of domains and projects">
+                        <canvas></canvas>
+                        <div class="hero-graph-tip" hidden></div>
+                      </div>
                       <h3 class="banner-three-center-title tw-text-120">
-                        Explainable AI, built to solve real problems.
+                        Building solutions for real-world problems
                       </h3>
                       <div class="banner-three-button">
                         <a
@@ -489,7 +440,7 @@
                           <span
                             class="purecounter font-heading"
                             data-purecounter-duration="4"
-                            data-purecounter-end="8"
+                            data-purecounter-end="10"
                           ></span
                           >+
                         </h4>
@@ -508,8 +459,9 @@
                           <span
                             class="purecounter font-heading"
                             data-purecounter-duration="3"
-                            data-purecounter-end="3"
-                          ></span>
+                            data-purecounter-end="6"
+                          ></span
+                          >+
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
@@ -545,11 +497,9 @@
                       class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
                     >
                       I am dedicated to building
-                      <span class="tw-highlight-magenta">explainable</span>,
-                      <span class="tw-highlight-magenta">transparent</span> AI
-                      systems that solve real problems — from credit risk to
-                      exoplanet detection. My work speaks louder than
-                      words—explore the results.
+                      <span class="tw-highlight-magenta">Explainable</span> and
+                      <span class="tw-highlight-magenta">Transparent</span> AI
+                      systems that solve real world problems.
                     </h2>
                   </div>
                 </div>
@@ -628,19 +578,22 @@
                         generative AI use cases.
                       </p>
                       <p class="tw-text-xl tw-mb-10">
-                        I care about models that explain themselves: SHAP,
-                        attention-based interpretability, and transparent
-                        reasoning show up across my projects, from credit-risk
-                        scoring to exoplanet detection to LLM-powered policy
-                        agents. I was a Barclays Hackathon Finalist for
-                        ArthSetu, my AI credit-intelligence platform.
+                        My work centers on financial risk and fraud: RiskPulse
+                        (real-time transaction risk and scam-coercion
+                        detection), RedShift (forensic red-flag detection in
+                        Indian annual reports), and ArthSetu (Barclays Hackathon
+                        Finalist, explainable credit scoring). I also build in
+                        space tech — Agastya (exoplanet detection) and AEGIS
+                        (deep-space habitat autonomy) — and lead software on
+                        AirMouse, a GPS-denied autonomous search-and-rescue
+                        drone.
                       </p>
                       <p class="tw-text-xl tw-mb-10">
-                        Outside of engineering, I'm Research Head at my
-                        university's ACM Club, previously led my school's
-                        Astrophysics Club, and compete as a national-level
-                        basketball player alongside swimming, badminton, and
-                        volleyball.
+                        I was a Top 10 National Finalist at Finvesta ‘26, placed
+                        2nd at the Udgam Hackathon, and scored 0.967 in the
+                        Amazon ML Challenge 2026. I'm a former national-level
+                        basketball player, and also swim, play badminton and
+                        volleyball. I speak English, Hindi, Punjabi, and Arabic.
                       </p>
                     </div>
                     <div class="about-three-counter d-inline-block">
@@ -726,6 +679,813 @@
             />
           </div>
         </section>
+        <section id="experience" class="service-three-area bg-black pt-120 tw-pb-15">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center tw-mb-21">
+              <div class="col-xl-9">
+                <div class="text-center">
+                  <h2
+                    class="about-three-title text-white tw-text-15 tw-itm-title tw-itm-anim"
+                  >
+                    Work Experience
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="service-three-wrapper">
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >01
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-2"
+                            >
+                              Origen Technologies
+                            </h2>
+                            <p class="text-white tw-text-lg tw-mb-4">
+                              Software Engineer Intern — Abu Dhabi, UAE — June–July 2026
+                            </p>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >IDD for PoP Smart Parks IoT (1,400+ sensors, 6 parks)</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >REST / JWT / GeoJSON pipelines</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >UAE govt & vendor stakeholder analysis</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="300"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >02
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-2"
+                            >
+                              ISIT Global
+                            </h2>
+                            <p class="text-white tw-text-lg tw-mb-4">
+                              AI/Cloud Implementation Intern — Dubai, UAE — May–July 2025
+                            </p>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Azure AI/cloud transformation for Etimad Holding</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >GenAI use cases: copilots, AIOps, doc intelligence</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >UAE Govt hazard-classification AI support</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="400"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >03
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-2"
+                            >
+                              Barclays
+                              <span
+                                class="tw-text-sm text-uppercase fw-bold tw-px-4 tw-py-1 bg-main-two-600 text-white tw-rounded-md"
+                                style="vertical-align: middle;"
+                                >Incoming</span
+                              >
+                            </h2>
+                            <p class="text-white tw-text-lg tw-mb-4">
+                              May–June 2027
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio" class="portfolio-three-area py-120 position-relative z-1">
+          <div class="portfolio-three-shape position-absolute top-0 z-n1" style="opacity: 0.06;">
+            <h3 class="portfolio-three-shape-title">projects</h3>
+          </div>
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center tw-mb-21">
+              <div class="col-xl-9">
+                <div class="text-center">
+                  <h2
+                    class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
+                  >
+                    Projects
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div
+                  class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1"
+                >
+                  <div
+                    id="proj-riskpulse" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <span class="text-heading">RiskPulse</span>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >AI / ML</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Fraud Detection</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          Real-time transaction risk and scam-coercion engine — scores transactions on 30+ features with SHAP explainability, and detects live digital-arrest scams through a multi-agent ‘puppet’ coercion check.
+                        </p>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <span
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/projects/riskpulse.png"
+                        alt="RiskPulse preview"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="proj-redshift" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <span class="text-heading">RedShift</span>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >AI / ML</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >In Progress — ships Nov 15</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          Forensic red-flag and market-mismatch detector for Indian annual reports — mines filings for financial red flags using Beneish M-score, Altman Z-score, and an LLM validation layer that checks every cited figure against the source.
+                        </p>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <span
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle"
+                          ><i class="ph ph-clock"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/projects/redshift.png"
+                        alt="RedShift preview"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="proj-arthsetu" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://github.com/aaryahi-dotcom/arthsetu-credit-hub"
+                              target="_blank"
+                              rel="noopener"
+                              >ArthSetu</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >AI / ML</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Barclays Hackathon Finalist</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          Explainable credit-intelligence platform for thin-file lending in India — logistic regression model (AUC 0.77) with SHAP reason codes and role-secured applicant/lender dashboards. Barclays Hackathon Finalist.
+                        </p>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="https://github.com/aaryahi-dotcom/arthsetu-credit-hub"
+                            target="_blank"
+                            rel="noopener"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://github.com/aaryahi-dotcom/arthsetu-credit-hub"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/projects/arthsetu.png"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    id="proj-agastya" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://github.com/aaryahi-dotcom/agastya"
+                              target="_blank"
+                              rel="noopener"
+                              >Agastya</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >AI / ML</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >AUC-ROC 0.96</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          Physics-informed exoplanet detection pipeline — a 5-stage system on Kepler/TESS light curves combining denoising, transit search, astrophysical vetting, and a TCN-Transformer classifier with SHAP explainability. AUC-ROC 0.96.
+                        </p>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://github.com/aaryahi-dotcom/agastya"
+                          target="_blank"
+                          rel="noopener"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://github.com/aaryahi-dotcom/agastya"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/projects/agastya.png"
+                          alt="thumb"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    id="proj-nidar" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <span class="text-heading">AirMouse</span>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Robotics</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >GPS-Denied SAR Drone</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          GPS-denied autonomous indoor search-and-rescue drone — led software across a 10-member team, building real-time YOLOv11 survivor detection and a 5-layer ROS 2 architecture spanning flight control, SLAM, perception, and autonomy.
+                        </p>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <span
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/projects/nidar-airmouse.jpg"
+                        alt="AirMouse preview"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="proj-aegis" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <span class="text-heading">AEGIS</span>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >SpaceTech</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Deep-Space Habitat Autonomy</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          Autonomous decision-support system for deep-space habitats — manages coupled power, CO₂, and thermal systems under compound faults, with 72-hour forecasting and safety-first, explainable resource prioritization.
+                        </p>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <span
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></span>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/projects/aegis.png"
+                        alt="AEGIS preview"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="proj-codeoptimizer" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a class="text-heading" href="https://code-boost-lab.base44.app/" target="_blank" rel="noopener">CodeOptimizer AI</a>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Web App</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >AI Code Review</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          AI-powered DSA code review and optimization assistant — analyzes your solutions and suggests cleaner, faster approaches.
+                        </p>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle" href="https://code-boost-lab.base44.app/" target="_blank" rel="noopener" aria-label="Open CodeOptimizer AI"><i class="ph ph-arrow-up-right"></i></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/projects/codeoptimizer-ai.png"
+                        alt="CodeOptimizer AI preview"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="proj-reconai" class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <span class="text-heading">reconai</span>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >Cybersecurity</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
+                                href="#"
+                                >AI Recon</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="tw-text-lg text-heading tw-mt-2">
+                          AI-assisted recon automation for authorized penetration testing — runs a Kali toolchain (nmap, nuclei, sqlmap, subfinder, etc.), generates an AI narrative report with a 0–100 security score, and includes a standalone phishing-link checker.
+                        </p>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <span class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle"><i class="ph ph-arrow-up-right"></i></span>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/projects/reconai.png"
+                        alt="reconai preview"
+                        style="object-fit: contain; background: #0a172c;"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0"
+                  >
+                    <div class="tw-hover-btn-wrapper d-inline-block">
+                      <a
+                        class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden"
+                        href="https://github.com/aaryahi-dotcom"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <span class="d-flex flex-column justify-content-center">
+                          <span
+                            class="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold"
+                            >View All <br />
+                            on GitHub <i class="ph ph-arrow-up-right"></i
+                          ></span>
+                        </span>
+                        <i class="tw-btn-circle-dot bg-main-two-600"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="feature-three-area py-120 position-relative z-1">
+          <div class="container tw-container-1800-px">
+            <div class="row tw-mb-15">
+              <div class="col-xl-12">
+                <h3 class="text-white tw-text-3xl">More Projects</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="feature-three-wrapper hover__widget">
+                  <a
+                    class="feature-three-single current hover__reveal-item d-block"
+                    href="https://github.com/aaryahi-dotcom/DrvDna"
+                    target="_blank"
+                    rel="noopener"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >01</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >DevDna</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >GitHub profile intelligence & AI developer persona card</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >React / Claude API</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/projects/devdna.png"
+                    ></div>
+                  </a>
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >02</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Java Banking System Simulator</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Core Java + Swing GUI banking app with JDBC/SQL persistence</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Java / JDBC</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/projects/java-banking-simulator.png"
+                    ></div>
+                  </div>
+                  <a
+                    class="feature-three-single hover__reveal-item d-block"
+                    href="https://github.com/aaryahi-dotcom/lecture-lullaby"
+                    target="_blank"
+                    rel="noopener"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >03</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Lecture Lullaby</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Personal student dashboard for attendance, marks & goal tracking</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >React / TypeScript</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/projects/lecture-lullaby.jpg"
+                    ></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- ======================== Marquee section start =========================== -->
         <div class="marquee tw-pt-17 bg-black">
           <div
@@ -945,6 +1705,55 @@
                                   >MediaPipe</a
                                 >
                               </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >PyTorch</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Isolation Forest</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >YOLOv11</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >NetworkX</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >GPflow</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >RAG</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Groq</a
+                                >
+                              </li>
                             </ul>
                           </div>
                         </div>
@@ -1050,6 +1859,41 @@
                                   >JWT</a
                                 >
                               </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >FastAPI</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >WebSockets</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Apache Kafka</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Redis</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >pytest</a
+                                >
+                              </li>
                             </ul>
                           </div>
                         </div>
@@ -1132,6 +1976,13 @@
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
                                   >PlantUML</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >ROS 2</a
                                 >
                               </li>
                             </ul>
@@ -1223,566 +2074,11 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="portfolio" class="portfolio-three-area py-120 position-relative z-1">
-          <div class="portfolio-three-shape position-absolute top-0 z-n1" style="opacity: 0.06;">
-            <h3 class="portfolio-three-shape-title">projects</h3>
-          </div>
-          <div class="container tw-container-1800-px">
-            <div class="row justify-content-center tw-mb-21">
-              <div class="col-xl-9">
-                <div class="text-center">
-                  <h2
-                    class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
-                  >
-                    Projects
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12">
-                <div
-                  class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1"
-                >
-                  <div
-                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
-                  >
-                    <div
-                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
-                    >
-                      <div class="tw-mb-6">
-                        <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
-                            <a
-                              class="hover-text-main-two-600"
-                              href="https://github.com/aaryahi-dotcom/arthsetu-credit-hub"
-                              target="_blank"
-                              rel="noopener"
-                              >ArthSetu</a
-                            >
-                          </h2>
-                        </div>
-                        <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >AI / ML</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >Barclays Hackathon Finalist</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="portfolio-three-button">
-                          <a
-                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                            href="https://github.com/aaryahi-dotcom/arthsetu-credit-hub"
-                            target="_blank"
-                            rel="noopener"
-                            ><i class="ph ph-arrow-up-right"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                      data-cursor="View"
-                    >
-                      <a
-                        class="d-block cursor-hide tw-rounded-lg"
-                        href="https://github.com/aaryahi-dotcom/arthsetu-credit-hub"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/projects/arthsetu.png"
-                          alt="thumb"
-                      /></a>
-                    </div>
-                  </div>
-                  <div
-                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
-                  >
-                    <div
-                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
-                    >
-                      <div class="tw-mb-6">
-                        <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
-                            <a
-                              class="hover-text-main-two-600"
-                              href="https://github.com/aaryahi-dotcom/agastya"
-                              target="_blank"
-                              rel="noopener"
-                              >Agastya</a
-                            >
-                          </h2>
-                        </div>
-                        <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >AI / ML</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >AUC-ROC 0.96</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="portfolio-three-button">
-                        <a
-                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="https://github.com/aaryahi-dotcom/agastya"
-                          target="_blank"
-                          rel="noopener"
-                          ><i class="ph ph-arrow-up-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                      data-cursor="View"
-                    >
-                      <a
-                        class="d-block cursor-hide tw-rounded-lg"
-                        href="https://github.com/aaryahi-dotcom/agastya"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/projects/agastya.png"
-                          alt="thumb"
-                      /></a>
-                    </div>
-                  </div>
-                  <div
-                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
-                  >
-                    <div
-                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
-                    >
-                      <div class="tw-mb-6">
-                        <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
-                            <span class="text-heading">Macro-Financial Stress Tester</span>
-                          </h2>
-                        </div>
-                        <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >AI / ML</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >In Progress</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="portfolio-three-button">
-                        <span
-                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle"
-                          ><i class="ph ph-clock"></i
-                        ></span>
-                      </div>
-                    </div>
-                    <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                    >
-                      <img
-                        class="w-100 tw-rounded-lg"
-                        src="assets/images/projects/macro-stress-tester.png"
-                        alt="thumb"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
-                  >
-                    <div
-                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
-                    >
-                      <div class="tw-mb-6">
-                        <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
-                            <a
-                              class="hover-text-main-two-600"
-                              href="https://github.com/aaryahi-dotcom/NeuroPlanAI"
-                              target="_blank"
-                              rel="noopener"
-                              >NeuroPlanAI</a
-                            >
-                          </h2>
-                        </div>
-                        <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >AI / ML</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >EdTech</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="portfolio-three-button">
-                        <a
-                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="https://github.com/aaryahi-dotcom/NeuroPlanAI"
-                          target="_blank"
-                          rel="noopener"
-                          ><i class="ph ph-arrow-up-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                      data-cursor="View"
-                    >
-                      <a
-                        class="d-block cursor-hide tw-rounded-lg"
-                        href="https://github.com/aaryahi-dotcom/NeuroPlanAI"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/projects/neuroplanai.png"
-                          alt="thumb"
-                      /></a>
-                    </div>
-                  </div>
-                  <div
-                    class="about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0"
-                  >
-                    <div class="tw-hover-btn-wrapper d-inline-block">
-                      <a
-                        class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden"
-                        href="https://github.com/aaryahi-dotcom"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        <span class="d-flex flex-column justify-content-center">
-                          <span
-                            class="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold"
-                            >View All <br />
-                            on GitHub <i class="ph ph-arrow-up-right"></i
-                          ></span>
-                        </span>
-                        <i class="tw-btn-circle-dot bg-main-two-600"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="feature-three-area py-120 position-relative z-1">
-          <div class="container tw-container-1800-px">
-            <div class="row tw-mb-15">
-              <div class="col-xl-12">
-                <h3 class="text-white tw-text-3xl">More Projects</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="feature-three-wrapper hover__widget">
-                  <a
-                    class="feature-three-single current hover__reveal-item d-block"
-                    href="https://code-boost-lab.base44.app/"
-                    target="_blank"
-                    rel="noopener"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="feature-three-left d-flex align-items-center">
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
-                            >01</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >CodeOptimizer AI</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >AI-powered DSA code review & optimization assistant</span
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >React / Node.js</span
-                        >
-                      </div>
-                    </div>
-                    <div
-                      class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/projects/codeoptimizer-ai.png"
-                    ></div>
-                  </a>
-                  <a
-                    class="feature-three-single hover__reveal-item d-block"
-                    href="https://github.com/aaryahi-dotcom/DrvDna"
-                    target="_blank"
-                    rel="noopener"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="feature-three-left d-flex align-items-center">
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
-                            >02</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >DevDna</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >GitHub profile intelligence & AI developer persona card</span
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >React / Claude API</span
-                        >
-                      </div>
-                    </div>
-                    <div
-                      class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/projects/devdna.png"
-                    ></div>
-                  </a>
-                  <div
-                    class="feature-three-single hover__reveal-item"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="feature-three-left d-flex align-items-center">
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
-                            >03</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Java Banking System Simulator</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Core Java + Swing GUI banking app with JDBC/SQL persistence</span
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >Java / JDBC</span
-                        >
-                      </div>
-                    </div>
-                    <div
-                      class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/projects/java-banking-simulator.png"
-                    ></div>
-                  </div>
-                  <a
-                    class="feature-three-single hover__reveal-item d-block"
-                    href="https://github.com/aaryahi-dotcom/lecture-lullaby"
-                    target="_blank"
-                    rel="noopener"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="feature-three-left d-flex align-items-center">
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
-                            >04</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Lecture Lullaby</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Personal student dashboard for attendance, marks & goal tracking</span
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >React / TypeScript</span
-                        >
-                      </div>
-                    </div>
-                    <div
-                      class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/projects/lecture-lullaby.jpg"
-                    ></div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section id="experience" class="service-three-area bg-black pt-120 tw-pb-15">
-          <div class="container tw-container-1800-px">
-            <div class="row justify-content-center tw-mb-21">
-              <div class="col-xl-9">
-                <div class="text-center">
-                  <h2
-                    class="about-three-title text-white tw-text-15 tw-itm-title tw-itm-anim"
-                  >
-                    Work Experience
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="service-three-wrapper">
-                  <div
-                    class="service-three-single"
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
-                    data-aos-delay="200"
-                  >
-                    <div
-                      class="service-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="service-three-content d-flex tw-gap-14">
-                        <div>
-                          <span
-                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
-                            >01
-                            <img
-                              class="tw-transition-3"
-                              src="assets/images/icons/service-three-arrow.svg"
-                              alt="arrow"
-                          /></span>
-                        </div>
-                        <div>
-                          <div>
-                            <h2
-                              class="service-three-title tw-text-15 text-white tw-mb-2"
-                            >
-                              Origen Technologies
-                            </h2>
-                            <p class="text-white tw-text-lg tw-mb-4">
-                              Software Engineer Intern — Abu Dhabi, UAE — June–July 2026
-                            </p>
-                          </div>
-                          <div class="portfolio-list portfolio-two-list">
-                            <ul class="d-flex tw-gap-205 flex-wrap">
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >IDD for PoP Smart Parks IoT (1,400+ sensors, 6 parks)</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >REST / JWT / GeoJSON pipelines</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >UAE govt & vendor stakeholder analysis</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div
                     class="service-three-single ms-auto"
                     data-aos="fade-left"
                     data-aos-duration="2000"
-                    data-aos-delay="300"
+                    data-aos-delay="700"
                   >
                     <div
                       class="service-three-item d-flex justify-content-between align-items-center"
@@ -1791,7 +2087,7 @@
                         <div>
                           <span
                             class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
-                            >02
+                            >06
                             <img
                               class="tw-transition-3"
                               src="assets/images/icons/service-three-arrow.svg"
@@ -1801,13 +2097,10 @@
                         <div>
                           <div>
                             <h2
-                              class="service-three-title tw-text-15 text-white tw-mb-2"
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              ISIT Global
+                              Security & Recon
                             </h2>
-                            <p class="text-white tw-text-lg tw-mb-4">
-                              AI/Cloud Implementation Intern — Dubai, UAE — May–July 2025
-                            </p>
                           </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
@@ -1815,66 +2108,53 @@
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >Azure AI/cloud transformation for Etimad Holding</a
+                                  >Nmap</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >GenAI use cases: copilots, AIOps, doc intelligence</a
+                                  >Nuclei</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
                                   href="#"
-                                  >UAE Govt hazard-classification AI support</a
+                                  >SQLMap</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Subfinder</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >DNSRecon</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
+                                  href="#"
+                                  >Kali Linux Toolchain</a
                                 >
                               </li>
                             </ul>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div
-                    class="service-three-single"
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
-                    data-aos-delay="400"
-                  >
-                    <div
-                      class="service-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="service-three-content d-flex tw-gap-14">
-                        <div>
-                          <span
-                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
-                            >03
-                            <img
-                              class="tw-transition-3"
-                              src="assets/images/icons/service-three-arrow.svg"
-                              alt="arrow"
-                          /></span>
-                        </div>
-                        <div>
-                          <div>
-                            <h2
-                              class="service-three-title tw-text-15 text-white tw-mb-2"
-                            >
-                              Barclays
-                              <span
-                                class="tw-text-sm text-uppercase fw-bold tw-px-4 tw-py-1 bg-main-two-600 text-white tw-rounded-md"
-                                style="vertical-align: middle;"
-                                >Incoming</span
-                              >
-                            </h2>
-                            <p class="text-white tw-text-lg tw-mb-4">
-                              May–June 2027
-                            </p>
-                          </div>
-                        </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="assets/images/thumbs/service-skill-nmap.png"
+                          alt="security-recon"
+                        />
                       </div>
                     </div>
                   </div>
@@ -1944,34 +2224,14 @@
             <div class="row justify-content-center tw-mt-13">
               <div class="col-xl-8">
                 <div
-                  class="d-flex flex-wrap tw-gap-6"
+                  class="d-flex flex-wrap justify-content-center tw-gap-6"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="300"
                 >
                   <a
                     class="tw-rounded-lg border border-1 border-neutral-200 overflow-hidden d-block"
-                    style="flex: 1 1 220px; text-decoration: none;"
-                    href="assets/images/certificates/az900.png"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      class="w-100"
-                      style="aspect-ratio: 4 / 3; object-fit: cover; object-position: top;"
-                      src="assets/images/certificates/az900.png"
-                      alt="Microsoft Certified: Azure Fundamentals (AZ-900) certificate"
-                    />
-                    <p
-                      class="tw-text-sm fw-medium text-center tw-py-3 tw-px-2 mb-0"
-                      style="background: hsl(33, 43%, 96%);"
-                    >
-                      Microsoft Azure Fundamentals (AZ-900)
-                    </p>
-                  </a>
-                  <a
-                    class="tw-rounded-lg border border-1 border-neutral-200 overflow-hidden d-block"
-                    style="flex: 1 1 220px; text-decoration: none;"
+                    style="flex: 0 1 calc(50% - 12px); text-decoration: none;"
                     href="assets/images/certificates/origen-reference-letter.png"
                     target="_blank"
                     rel="noopener"
@@ -1994,6 +2254,125 @@
             </div>
           </div>
         </section>
+        <section id="certificates" class="py-120 position-relative z-1">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center tw-mb-21">
+              <div class="col-xl-9">
+                <div class="text-center">
+                  <h2
+                    class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
+                  >
+                    Certificates
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div
+                  class="cert-gallery"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <a
+                    class="cert-gallery-item tw-rounded-lg border border-1 border-neutral-200 overflow-hidden d-block"
+                    style="text-decoration: none;"
+                    href="assets/images/certificates/az900.png"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      class="w-100"
+                      style="aspect-ratio: 4 / 3; object-fit: cover; object-position: center;"
+                      src="assets/images/certificates/az900.png"
+                      alt="Microsoft Certified: Azure Fundamentals (AZ-900) certificate"
+                    />
+                    <p
+                      class="tw-text-sm fw-medium text-center tw-py-3 tw-px-2 mb-0"
+                      style="background: hsl(33, 43%, 96%);"
+                    >
+                      Microsoft Azure Fundamentals (AZ-900)
+                    </p>
+                  </a>
+                  <a
+                    class="cert-gallery-item tw-rounded-lg border border-1 border-neutral-200 overflow-hidden d-block"
+                    style="text-decoration: none;"
+                    href="assets/images/certificates/finvesta.png"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      class="w-100"
+                      style="aspect-ratio: 4 / 3; object-fit: cover; object-position: center;"
+                      src="assets/images/certificates/finvesta.png"
+                      alt="Finvesta ‘26 Top 10 National Finalist certificate from The Finance Symposium, St. Xavier’s College, Mumbai"
+                    />
+                    <p
+                      class="tw-text-sm fw-medium text-center tw-py-3 tw-px-2 mb-0"
+                      style="background: hsl(33, 43%, 96%);"
+                    >
+                      Finvesta ‘26 — Top 10 National Finalist
+                    </p>
+                  </a>
+                  <a
+                    class="cert-gallery-item tw-rounded-lg border border-1 border-neutral-200 overflow-hidden d-block"
+                    style="text-decoration: none;"
+                    href="assets/images/certificates/dreambuilder.png"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      class="w-100"
+                      style="aspect-ratio: 4 / 3; object-fit: cover; object-position: center;"
+                      src="assets/images/certificates/dreambuilder.png"
+                      alt="DreamBuilder certificate of completion from Thunderbird School of Global Management, ASU and the Freeport-McMoRan Foundation"
+                    />
+                    <p
+                      class="tw-text-sm fw-medium text-center tw-py-3 tw-px-2 mb-0"
+                      style="background: hsl(33, 43%, 96%);"
+                    >
+                      DreamBuilder — Thunderbird School of Global Management, ASU, Freeport-McMoRan Foundation
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .cert-gallery {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 24px;
+              align-items: stretch;
+            }
+            .cert-gallery-item {
+              display: flex !important;
+              flex-direction: column;
+              flex: 0 0 calc((100% - 72px) / 4);
+              max-width: calc((100% - 72px) / 4);
+            }
+            .cert-gallery-item p {
+              flex: 1 1 auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @media (max-width: 991px) {
+              .cert-gallery-item {
+                flex-basis: calc((100% - 24px) / 2);
+                max-width: calc((100% - 24px) / 2);
+              }
+            }
+            @media (max-width: 575px) {
+              .cert-gallery-item {
+                flex-basis: 100%;
+                max-width: 100%;
+              }
+            }
+          </style>
+        </section>
         <section id="articles" class="py-120 position-relative z-1">
           <div class="container tw-container-1800-px">
             <div class="row justify-content-center tw-mb-21">
@@ -2002,7 +2381,7 @@
                   <h2
                     class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
                   >
-                    Articles
+                    Research &amp; Writing
                   </h2>
                 </div>
               </div>
@@ -2035,6 +2414,92 @@
                       Read on LinkedIn
                       <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
                     </a>
+                  </div>
+                </div>
+                <div
+                  class="tw-p-705 tw-rounded-lg border border-1 border-neutral-200 d-flex justify-content-between align-items-center flex-nowrap tw-gap-6 mt-4"
+                  style="background: hsl(33, 43%, 96%);"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <span
+                      class="text-uppercase tw-text-sm fw-medium text-main-two-600"
+                      >Research Paper · Connected to RedShift</span
+                    >
+                    <h2 class="tw-text-605 fw-medium tw-mt-2 tw-mb-2">
+                      Do Grounded Citations Actually Ground? Measuring Quotation
+                      Fidelity in LLM-Based Forensic Analysis of Indian Annual
+                      Reports
+                    </h2>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span
+                      class="bg-black text-white text-uppercase fw-bold tw-py-4 tw-px-10 d-inline-block tw-rounded-md"
+                      >Forthcoming</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tw-p-705 tw-rounded-lg border border-1 border-neutral-200 d-flex justify-content-between align-items-center flex-nowrap tw-gap-6 mt-4"
+                  style="background: hsl(33, 43%, 96%);"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <span
+                      class="text-uppercase tw-text-sm fw-medium text-main-two-600"
+                      >Literature Review</span
+                    >
+                    <h2 class="tw-text-605 fw-medium tw-mt-2 tw-mb-2">
+                      Teaching Machines to Smell: A Review of Five Recent Studies
+                      in AI Olfaction (2025–2026)
+                    </h2>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span
+                      class="bg-black text-white text-uppercase fw-bold tw-py-4 tw-px-10 d-inline-block tw-rounded-md"
+                      >Forthcoming</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tw-p-705 tw-rounded-lg border border-1 border-neutral-200 d-flex justify-content-between align-items-center flex-nowrap tw-gap-6 mt-4"
+                  style="background: hsl(33, 43%, 96%);"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <span
+                      class="text-uppercase tw-text-sm fw-medium text-main-two-600"
+                      >Short Critiques</span
+                    >
+                    <h2 class="tw-text-605 fw-medium tw-mt-2 tw-mb-2">
+                      Paper Critiques
+                    </h2>
+                    <ul class="tw-text-lg mb-0 ps-3">
+                      <li>
+                        Reasoning Models Don’t Always Say What They Think
+                        (Anthropic)
+                      </li>
+                      <li>
+                        Advancing Intelligent Personal Assistants for Human
+                        Spaceflight (SpaceCHI)
+                      </li>
+                      <li>
+                        Vision-Language Foundation Models for Open-Vocabulary
+                        Segmentation
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span
+                      class="bg-black text-white text-uppercase fw-bold tw-py-4 tw-px-10 d-inline-block tw-rounded-md"
+                      >Forthcoming</span
+                    >
                   </div>
                 </div>
               </div>
@@ -2132,6 +2597,31 @@
                       </div>
                     </div>
                   </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq4"
+                        aria-expanded="false"
+                        aria-controls="faq4"
+                      >
+                        What are you working on right now?
+                      </button>
+                    </h3>
+                    <div
+                      id="faq4"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Two projects shipping mid-November 2026 — RedShift, a
+                        forensic red-flag detector for Indian annual reports,
+                        and a full agent-based Macro-Financial Stress Tester.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2208,6 +2698,9 @@
                           Aaryahi Ahluwalia
                         </h3>
                         <p class="text-white tw-text-lg">AI Engineer & CS-AI Student</p>
+                        <p class="text-white tw-text-lg">
+                          Languages: English, Hindi, Punjabi, Arabic
+                        </p>
                       </div>
                       <div class="footer-three-social">
                         <ul class="d-flex align-items-center tw-gap-1">
@@ -2423,6 +2916,11 @@
     <script src="assets/js/main.js?v=4"></script>
     <!-- cursor js -->
     <script src="assets/js/tw-cursor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@3.0.1/dist/d3-dispatch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3.0.1/dist/d3-quadtree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-timer@3.0.1/dist/d3-timer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-force@3.0.0/dist/d3-force.min.js"></script>
+    <script src="assets/js/hero-graph.js?v=8"></script>
     <!-- about portrait tilt effect -->
     <script>
       (function () {

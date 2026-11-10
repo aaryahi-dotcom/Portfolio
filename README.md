@@ -25,20 +25,33 @@ Bootstrap/GSAP animated template.
 
 This site is a static, single-page portfolio (`index.html`, no build step) covering:
 
-- **Hero** — role tagline, quick stats (internships, projects shipped, systems built)
+- **Hero** — "AI/ML Engineer" headline, five focus pills (Explainable ML & Risk
+  Intelligence, Autonomous Systems & Robotics, LLM Agents & RAG, Computer Vision,
+  Cloud-Native Backend Engineering), and quick stats (2+ international
+  internships, 10+ projects shipped, 6+ major AI/ML systems built)
 - **About** — bio + a monospace "spec card" (`FUNCTION / CURRENTLY / BUILDING TOWARD /
   DOMAINS / STATUS`) in place of a portrait photo
-- **Skills** — five numbered rows (Languages, AI/ML, Development, Systems &
-  Engineering, Cloud & Tools) over an interactive mouse-tracking grid background
-- **Projects** — 8 project cards (ArthSetu, Agastya, Macro-Financial Stress Tester,
-  NeuroPlanAI, CodeOptimizer AI, DevDna, a Java banking simulator, Lecture Lullaby)
+- **Skills** — six numbered rows (Languages, AI/ML, Development, Systems &
+  Engineering, Cloud & Tools, Security & Recon) over an interactive mouse-tracking
+  grid background
+- **Projects** — six featured cards (RiskPulse, RedShift, ArthSetu, Agastya,
+  AirMouse, AEGIS), each with a short description. Cards without a confirmed link
+  or screenshot use `assets/images/projects/placeholder.svg`. A **More Projects**
+  list below covers CodeOptimizer AI and reconai
 - **Work Experience** — Origen Technologies, ISIT Global, and an upcoming Barclays
   stint
-- **Recommendation** — reference excerpt from Origen Technologies
-- **Articles** — a featured write-up ("The SAIL Model")
-- **FAQ** — accordion covering stack, focus areas, and availability
-- **Contact** — LinkedIn, GitHub, and a certificate gallery (Microsoft Azure AZ-900,
-  Origen reference letter)
+- **Recommendation** — reference excerpt and reference letter from Origen
+  Technologies
+- **Certificates** — gallery of Microsoft Azure AZ-900, Finvesta '26 (Top 10
+  National Finalist), and DreamBuilder (Thunderbird / ASU)
+- **Research & Writing** — the published "SAIL Model" LinkedIn piece plus
+  forthcoming entries (RedShift citation-fidelity paper, AI olfaction review,
+  paper critiques). Forthcoming items have a status tag instead of a link
+- **FAQ** — accordion covering projects, stack, availability, and what I'm working
+  on now
+- **Contact** — email, phone, languages, LinkedIn/GitHub, and a contact form
+  (currently `action="#"` — not wired to a backend yet; needs Formspree or a small
+  serverless endpoint, plus `name` attributes on the inputs)
 
 ## Tech Stack
 
@@ -62,8 +75,8 @@ shan-portfolio/
 │   │   ├── custom-gsap.js      # ScrollSmoother setup
 │   │   └── ...                 # AOS, magnific-popup, swiper, tw-cursor, etc.
 │   ├── images/
-│   │   ├── projects/           # project card thumbnails
-│   │   ├── certificates/       # AZ-900, Origen reference letter
+│   │   ├── projects/           # project card thumbnails + placeholder.svg
+│   │   ├── certificates/       # AZ-900, Finvesta, DreamBuilder, Origen letter
 │   │   ├── thumbs/             # skills-section images, about portrait
 │   │   └── shapes/, icons/, logo/
 │   ├── wenfonts/                # icon font
